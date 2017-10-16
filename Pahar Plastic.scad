@@ -3,7 +3,7 @@ module pahar_plastic(inaltime_pahar, raza_baza_pahar, raza_sus_pahar, raza_buza,
     difference(){
         union(){
          cylinder( h =inaltime_pahar, r1 = raza_baza_pahar, r2 = raza_sus_pahar); 
-        translate([0, 0, inaltime_pahar]) cylinder( h = inaltime_buz, r =  raza_buza); 
+        translate([0, 0, inaltime_pahar]) cylinder( h = inaltime_buza, r =  raza_buza); 
         
         }
         
@@ -11,5 +11,5 @@ module pahar_plastic(inaltime_pahar, raza_baza_pahar, raza_sus_pahar, raza_buza,
      
     }
     }
-    pahar_plastic(60, 15, 30, 32, 2, 1);
-    
+    pahar_plastic(inaltime_pahar = 60, raza_baza_pahar = 15, raza_sus_pahar = 30, raza_buza = 32, inaltime_buza = 2, grosime_perete = 1);
+     
