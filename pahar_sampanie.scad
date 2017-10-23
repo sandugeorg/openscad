@@ -49,12 +49,19 @@ module baza_pahar(raza_baza, grosime_baza)
         {
             for ( i = [0 : nr_pahare_x - 1])
                 for ( j = [0 : nr_pahare_x - 1])
-                translate([i * (50 * 2 + 5), j * (50 * 2 + 5), 0])
+               translate([i * (50 * 2 + 5), j * (50 * 2 + 5), 0])
           
             
      pahar_sampanie(raza_baza = 20, grosime_baza = 3, raza_picior = 2, inaltime_picior = 100, raza_cupa = 50, grosime_perete_cupa = 2);
         }
         
            // pahare_in_sir(10);
-        pahare_in_matrice(nr_pahare_x = 5, nr_pahare_y = 7);
+       // pahare_in_matrice(nr_pahare_x = 5, nr_pahare_y = 7);
         
+        module pahare_in_matrice2(nr_pahare_x, nr_pahare_y){
+        
+        for(i = [0 : nr_pahare_y - 1])
+            translate([0, i * 50 * 2 + 5, 0])
+        pahare_in_sir(nr_pahare_x);
+    }
+        pahare_in_matrice2(nr_pahare_x = 5, nr_pahare_y = 7);
