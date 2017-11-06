@@ -8,4 +8,9 @@ translate([6,6,4]) cube([18,18,2]);
 translate([9,9,6]) cube([12,12,30]);
     }
 }
+difference(){
+    color ("SaddleBrown")
+translate([0,0,36]) cube([44,44,3]);
+translate([2,2,38]) cube([40,40,1]);
+}
 chess_table();
