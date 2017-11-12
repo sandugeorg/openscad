@@ -15,3 +15,14 @@ translate([16,16,6])
     cube([px,py,pz]);
     }
 }
+module blat(blat_x,blat_y,blat_z){
+difference(){
+    color ("SaddleBrown")
+translate([0,0,36]) cube([blat_x,blat_y,blat_z]);
+
+}
+
+   }
+baza(30,30,2,24,24,2,18,18,2);
+picior(12,12,30);
+blat(44,44,3);
