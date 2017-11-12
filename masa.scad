@@ -9,3 +9,9 @@ translate([6,6,4]) cube([b3x,b3y,b3z]);}
 }
 }
 }
+module picior(px,py,pz){
+translate([16,16,6]) 
+    color ("SaddleBrown") {
+    cube([px,py,pz]);
+    }
+}
